@@ -1,0 +1,79 @@
+@layer base {
+	:root {
+	  --background: 0 0% 100%;
+	  --foreground: 240 10% 3.9%;
+	  --card: 0 0% 100%;
+	  --card-foreground: 240 10% 3.9%;
+	  --popover: 0 0% 100%;
+	  --popover-foreground: 240 10% 3.9%;
+	  --primary: 240 5.9% 10%;
+	  --primary-foreground: 0 0% 98%;
+	  --secondary: 240 4.8% 95.9%;
+	  --secondary-foreground: 240 5.9% 10%;
+	  --muted: 240 4.8% 95.9%;
+	  --muted-foreground: 240 3.8% 46.1%;
+	  --accent: 240 4.8% 95.9%;
+	  --accent-foreground: 240 5.9% 10%;
+	  --destructive: 0 84.2% 60.2%;
+	  --destructive-foreground: 0 0% 98%;
+	  --border: 240 5.9% 90%;
+	  --input: 240 5.9% 90%;
+	  --ring: 240 5.9% 10%;
+	  --radius: 0.5rem;
+	}
+  
+	.dark {
+	  --background: 240 10% 3.9%;
+	  --foreground: 0 0% 98%;
+	  --card: 240 10% 3.9%;
+	  --card-foreground: 0 0% 98%;
+	  --popover: 240 10% 3.9%;
+	  --popover-foreground: 0 0% 98%;
+	  --primary: 0 0% 98%;
+	  --primary-foreground: 240 5.9% 10%;
+	  --secondary: 240 3.7% 15.9%;
+	  --secondary-foreground: 0 0% 98%;
+	  --muted: 240 3.7% 15.9%;
+	  --muted-foreground: 240 5% 64.9%;
+	  --accent: 240 
+	}
+
+	/* Contenedor de los botones */
+.relative.z-10 {
+	margin-top: 20px; /* Ajuste de margen superior */
+  }
+  
+  /* Estilo común para los botones */
+  .custom-button {
+	background-color: #ffbd00; /* Fondo amarillo */
+	color: black; /* Texto negro */
+	padding: 12px 24px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold; /* Texto más grueso */
+	width: 200px; /* Ancho fijo para los botones */
+	
+	/* Añadir la animación de respiración */
+	animation: breathing 2s ease-in-out infinite;
+  }
+  
+  /* Efecto hover para los botones */
+  .custom-button:hover {
+	background-color: #e0a800; /* Cambio de color al pasar el mouse */
+  }
+  
+  /* Definir la animación de respiración */
+  @keyframes breathing {
+	0%, 100% {
+	  transform: scale(1); /* Tamaño normal */
+	  opacity: 1; /* Opacidad normal */
+	}
+	50% {
+	  transform: scale(1.05); /* Aumenta el tamaño un poco */
+	  opacity: 0.9; /* Disminuye un poco la opacidad */
+	}
+  }
+  
+	  
+}  
